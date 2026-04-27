@@ -4,8 +4,16 @@ function App() {
       console.log(event.target);
     }
 
+    window.addEventListener("scroll", handleScroll)
+
+    function handleScroll() {
+        console.log("Rolou")
+    }
+
     return (
-    <button onClick={handleClick}>Clique</button>
+      <div style={{height: '100vh'}}>
+        <button onClick={handleClick}>Clique</button>
+      </div>
     );
 }
 
