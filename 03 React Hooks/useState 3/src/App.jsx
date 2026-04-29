@@ -20,7 +20,7 @@ function App() {
         <button style={{margin: '.5rem'}} onClick={handleClick}>smartphone</button>
         <button style={{margin: '.5rem'}} onClick={handleClick}>tablet</button>
         {carregando && <p>Carregando...</p>}
-        {dados && <Produto dados={dados}/>}
+        {!carregando && dados && <Produto dados={dados}/>}
       </>
     );
 }
